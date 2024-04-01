@@ -1,5 +1,5 @@
 public class Conta {
-    String Dono;
+    Cliente Dono = new Cliente();
     double saldo;
     int num;
     String agencia;
@@ -35,7 +35,11 @@ public class Conta {
         }
     }
     void imprimir (){
-        System.out.println("Dono: "+Dono);
+        System.out.println("Dono: "+Dono.Nome);
+        System.out.println("CPF: "+Dono.CPF);
+        System.out.println("Endereço: "+Dono.endereco);
+        System.out.println("Idade: "+Dono.idade);
+        System.out.println("Gênero: "+Dono.genero);
         System.out.println("Número da conta: "+num);
         System.out.println("Saldo: "+saldo);
         System.out.println("Limite: "+limite);
