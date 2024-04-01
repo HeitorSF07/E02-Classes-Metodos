@@ -3,6 +3,7 @@ public class Conta {
     double saldo;
     int num;
     String agencia;
+    double limite;
 
     boolean depositar(double valor) {
         if(valor > 0.0) {
@@ -32,6 +33,12 @@ public class Conta {
         } else {
             return false;
         }
+    }
+    void imprimir (){
+        System.out.println("Dono: "+Dono);
+        System.out.println("Número da conta: "+num);
+        System.out.println("Saldo: "+saldo);
+        System.out.println("Limite: "+limite);
     }
 }
 
